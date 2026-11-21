@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-11-21T00:42:39.561860+00:00",
+  "python": "3.13.17",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "workers": 3,
+  "orders": 1200,
+  "fixture_seed": 8152026,
+  "matplotlib": "3.11.2",
+  "numpy": "2.3.5",
+  "timing_scope": "Engine trace origin after source snapshot/tool identity through BUILD_FINISHED; actual local durations"
+}

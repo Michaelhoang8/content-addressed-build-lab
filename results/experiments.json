@@ -1,0 +1,50 @@
+[
+  {
+    "name": "clean",
+    "expected_status": "SUCCESS",
+    "expected_built": [
+      "bundle",
+      "customers",
+      "orders",
+      "report",
+      "revenue",
+      "schema_source",
+      "validated"
+    ]
+  },
+  {
+    "name": "warm",
+    "expected_status": "SUCCESS",
+    "expected_built": []
+  },
+  {
+    "name": "selective_edit",
+    "expected_status": "SUCCESS",
+    "expected_built": [
+      "bundle",
+      "orders",
+      "report",
+      "revenue",
+      "validated"
+    ]
+  },
+  {
+    "name": "cache_corruption",
+    "expected_status": "SUCCESS",
+    "expected_built": [
+      "customers"
+    ]
+  },
+  {
+    "name": "failed_action",
+    "expected_status": "FAILED",
+    "expected_built": []
+  },
+  {
+    "name": "same_output_edit",
+    "expected_status": "SUCCESS",
+    "expected_built": [
+      "orders"
+    ]
+  }
+]

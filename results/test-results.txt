@@ -1,0 +1,18 @@
+test_action_failure_has_distinct_exit_status (test_cli.CliTests.test_action_failure_has_distinct_exit_status) ... ok
+test_missing_workspace_and_invalid_graph_are_concise_errors (test_cli.CliTests.test_missing_workspace_and_invalid_graph_are_concise_errors) ... ok
+test_byte_change_with_same_output_stops_invalidation (test_engine.BuildTests.test_byte_change_with_same_output_stops_invalidation) ... ok
+test_cache_lock_is_exclusive (test_engine.BuildTests.test_cache_lock_is_exclusive) ... ok
+test_clean_warm_and_selective_dependency_closure (test_engine.BuildTests.test_clean_warm_and_selective_dependency_closure) ... ok
+test_concurrent_ready_actions_and_dependency_gates (test_engine.BuildTests.test_concurrent_ready_actions_and_dependency_gates) ... ok
+test_corrupt_cache_is_quarantined_and_rebuilt (test_engine.BuildTests.test_corrupt_cache_is_quarantined_and_rebuilt) ... ok
+test_failed_action_does_not_select_partial_release (test_engine.BuildTests.test_failed_action_does_not_select_partial_release) ... ok
+test_graph_errors_and_paths_precede_cache_mutation (test_engine.BuildTests.test_graph_errors_and_paths_precede_cache_mutation) ... ok
+test_key_and_column_order_semantics (test_engine.BuildTests.test_key_and_column_order_semantics) ... ok
+test_windows_replace_retries_are_bounded_and_recorded (test_engine.BuildTests.test_windows_replace_retries_are_bounded_and_recorded) ... ok
+test_column_mapping_order_is_equivalent_in_both_key_and_behavior (test_review.ReviewTests.test_column_mapping_order_is_equivalent_in_both_key_and_behavior) ... ok
+test_failed_pointer_replace_preserves_selected_release_and_reuses_valid_cache (test_review.ReviewTests.test_failed_pointer_replace_preserves_selected_release_and_reuses_valid_cache) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.946s
+
+OK

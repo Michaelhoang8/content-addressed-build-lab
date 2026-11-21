@@ -1,0 +1,7 @@
+# {{title}}
+
+Synthetic fixture output. Amounts are integer cents.
+
+{{rows}}
+
+Total cents: {{total}}

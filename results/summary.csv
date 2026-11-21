@@ -1,0 +1,7 @@
+scenario,status,built,hits,not_completed,engine_interval_ms,cache_rejections,successful_action_output_bytes
+clean,SUCCESS,7,0,0,90.7699,0,146108
+warm,SUCCESS,0,7,0,22.6339,0,146108
+selective_edit,SUCCESS,5,2,0,95.4431,0,146108
+cache_corruption,SUCCESS,1,6,0,30.2691,1,146108
+failed_action,FAILED,0,5,2,10.5079,0,144624
+same_output_edit,SUCCESS,1,6,0,43.0085,0,146108

@@ -1,0 +1,242 @@
+{
+  "status": "SUCCESS",
+  "failure": null,
+  "pointer": {
+    "format": 1,
+    "release": "5e3e4657ac28827a-a1b4cd54bd51",
+    "manifest_sha256": "5e3e4657ac28827a47bf9aa90d292f4bcf7f3a1dd0601aea2b501694278dbb47",
+    "artifact_digest": "9ee938b34f36faa1778515635804b4b6402474f5b4ee2de652c1e872098c9edf"
+  },
+  "actions": {
+    "bundle": {
+      "key": "1c0fe5592421c94a55379d84e745009171433a17a5e33cc30b63a42f1c3bcb15",
+      "files": {
+        "bundle.json": {
+          "bytes": 1231,
+          "sha256": "cbd95b496fd596129730ca4f72b22fb1f6173eca73f8339a6cf9ef2e50c467d1"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1746900
+    },
+    "customers": {
+      "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+      "files": {
+        "customers.json": {
+          "bytes": 2862,
+          "sha256": "bbc62aa0ceeaddb76e8822e379d447ae702870ee8ac72b8571a0c2cbbe6c2e5d"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 5084700
+    },
+    "orders": {
+      "key": "981b3d7a46855756468b4d5f2479dce88e56cac136a3b011c09367d4edcb7794",
+      "files": {
+        "orders.json": {
+          "sha256": "5a38a1d2164d7cd6384add1ec12523537d2e275977fdbdd8bf7a71e15ea35284",
+          "bytes": 70639
+        }
+      },
+      "status": "BUILT",
+      "duration_ns": 12603200
+    },
+    "report": {
+      "key": "193d3515f9ff6ec7ec0ba2bf9941292fabe5fc153f1903936922978a70e73d6f",
+      "files": {
+        "report.md": {
+          "bytes": 253,
+          "sha256": "3004e71ace9dc1e514004bdb2013c59d0eff93fcf7ce66f2dfda6e83eb8c6713"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1308600
+    },
+    "revenue": {
+      "key": "ecd5343debf3613c5c848896e6c6b58f326be9f2178f64e28cdea84ae044433a",
+      "files": {
+        "revenue.json": {
+          "bytes": 250,
+          "sha256": "871b9ce3a0b345d46f832321bf9563590ea6ff4a60c660b1eb97a958cf799e76"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1702300
+    },
+    "schema_source": {
+      "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766",
+      "files": {
+        "order_schema.py": {
+          "bytes": 234,
+          "sha256": "a81414f736ad8469dd218539a843e72c9fba57c3e3a13fa53ae7076bdd916bb3"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 4669700
+    },
+    "validated": {
+      "key": "2f44ee8082bc72b6b88aa893765a1f253163adf1d1a056fba6eaf06d6a42f446",
+      "files": {
+        "orders.valid.json": {
+          "bytes": 70639,
+          "sha256": "5a38a1d2164d7cd6384add1ec12523537d2e275977fdbdd8bf7a71e15ea35284"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1344900
+    }
+  },
+  "not_completed": [],
+  "tool": {
+    "engine_api": 1,
+    "python": "3.13.17",
+    "implementation": "CPython",
+    "sources": {
+      "engine.py": "6cba7510757eb64c7b48daf7d00e664702d2b0b094ac2f86093a0f74888ba15d",
+      "operations.py": "495c69cbad92fd9949c7d7d40341a6cf58200d15e7d334ad3a8319fcd59dfd47"
+    }
+  },
+  "duration_ns": 43008500,
+  "events": [
+    {
+      "event_id": 0,
+      "time_ns": 995800,
+      "event": "BUILD_STARTED",
+      "workers": 3,
+      "actions": 7,
+      "source_bytes": 19573
+    },
+    {
+      "event_id": 1,
+      "time_ns": 1187200,
+      "event": "ACTION_STARTED",
+      "action": "customers",
+      "thread": "build-action_0"
+    },
+    {
+      "event_id": 2,
+      "time_ns": 1344900,
+      "event": "ACTION_STARTED",
+      "action": "orders",
+      "thread": "build-action_1"
+    },
+    {
+      "event_id": 3,
+      "time_ns": 1505100,
+      "event": "ACTION_STARTED",
+      "action": "schema_source",
+      "thread": "build-action_2"
+    },
+    {
+      "event_id": 4,
+      "time_ns": 1687300,
+      "event": "ACTION_EXECUTING",
+      "action": "orders",
+      "key": "981b3d7a46855756468b4d5f2479dce88e56cac136a3b011c09367d4edcb7794"
+    },
+    {
+      "event_id": 5,
+      "time_ns": 6177900,
+      "event": "CACHE_HIT",
+      "action": "schema_source",
+      "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766",
+      "duration_ns": 4669700,
+      "output_bytes": 234
+    },
+    {
+      "event_id": 6,
+      "time_ns": 6272000,
+      "event": "CACHE_HIT",
+      "action": "customers",
+      "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+      "duration_ns": 5084700,
+      "output_bytes": 2862
+    },
+    {
+      "event_id": 7,
+      "time_ns": 13952700,
+      "event": "ACTION_BUILT",
+      "action": "orders",
+      "key": "981b3d7a46855756468b4d5f2479dce88e56cac136a3b011c09367d4edcb7794",
+      "duration_ns": 12603200,
+      "output_bytes": 70639
+    },
+    {
+      "event_id": 8,
+      "time_ns": 14117200,
+      "event": "ACTION_STARTED",
+      "action": "validated",
+      "thread": "build-action_2"
+    },
+    {
+      "event_id": 9,
+      "time_ns": 15462400,
+      "event": "CACHE_HIT",
+      "action": "validated",
+      "key": "2f44ee8082bc72b6b88aa893765a1f253163adf1d1a056fba6eaf06d6a42f446",
+      "duration_ns": 1344900,
+      "output_bytes": 70639
+    },
+    {
+      "event_id": 10,
+      "time_ns": 15525800,
+      "event": "ACTION_STARTED",
+      "action": "revenue",
+      "thread": "build-action_0"
+    },
+    {
+      "event_id": 11,
+      "time_ns": 17227800,
+      "event": "CACHE_HIT",
+      "action": "revenue",
+      "key": "ecd5343debf3613c5c848896e6c6b58f326be9f2178f64e28cdea84ae044433a",
+      "duration_ns": 1702300,
+      "output_bytes": 250
+    },
+    {
+      "event_id": 12,
+      "time_ns": 17347200,
+      "event": "ACTION_STARTED",
+      "action": "report",
+      "thread": "build-action_1"
+    },
+    {
+      "event_id": 13,
+      "time_ns": 18655400,
+      "event": "CACHE_HIT",
+      "action": "report",
+      "key": "193d3515f9ff6ec7ec0ba2bf9941292fabe5fc153f1903936922978a70e73d6f",
+      "duration_ns": 1308600,
+      "output_bytes": 253
+    },
+    {
+      "event_id": 14,
+      "time_ns": 18736300,
+      "event": "ACTION_STARTED",
+      "action": "bundle",
+      "thread": "build-action_2"
+    },
+    {
+      "event_id": 15,
+      "time_ns": 20483500,
+      "event": "CACHE_HIT",
+      "action": "bundle",
+      "key": "1c0fe5592421c94a55379d84e745009171433a17a5e33cc30b63a42f1c3bcb15",
+      "duration_ns": 1746900,
+      "output_bytes": 1231
+    },
+    {
+      "event_id": 16,
+      "time_ns": 42981500,
+      "event": "RELEASE_PUBLISHED",
+      "release": "5e3e4657ac28827a-a1b4cd54bd51",
+      "artifact_digest": "9ee938b34f36faa1778515635804b4b6402474f5b4ee2de652c1e872098c9edf"
+    },
+    {
+      "event_id": 17,
+      "time_ns": 43008500,
+      "event": "BUILD_FINISHED",
+      "status": "SUCCESS"
+    }
+  ]
+}

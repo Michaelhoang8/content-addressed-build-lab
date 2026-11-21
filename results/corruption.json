@@ -1,0 +1,9 @@
+{
+  "action": "customers",
+  "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+  "before_sha256": "bbc62aa0ceeaddb76e8822e379d447ae702870ee8ac72b8571a0c2cbbe6c2e5d",
+  "corrupted_sha256": "7bb8abf60a5c040f2adca73bd91cd98aa67cb22ffd8521f6f5fd8fe62f0b8464",
+  "repaired_sha256": "bbc62aa0ceeaddb76e8822e379d447ae702870ee8ac72b8571a0c2cbbe6c2e5d",
+  "corrupted_bytes": 2885,
+  "cache_rejections": 1
+}

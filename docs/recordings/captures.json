@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-11-21T00:53:30.501935+00:00",
+  "source": "Actual browser rendering of docs/report.html",
+  "recording": "Continuous automated browser review; not manual development footage",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "page_title": "Content-addressed build lab",
+  "report_sha256_normalized_text": "07d1945ada4671543c188c39f126fdb3853e370df6201bcb4b1339c7401e6afd",
+  "video_sha256": "1c55b588639eecfb2b378c3deea3b3e6527fcf80866f49dd34a567f2dab8c85d",
+  "captures": [
+    {
+      "path": "docs/screenshots/01_overview.png",
+      "section": "overview",
+      "sha256": "7c5a42f253a6c73567dab380386f7e3f56e02a93ecd6735e486c0b5882b17303"
+    },
+    {
+      "path": "docs/screenshots/02_graph.png",
+      "section": "graph",
+      "sha256": "7a9276409b5a5b78cd20bcf8e2b4882bb161b76e14496f20c500571a4f2695e3"
+    },
+    {
+      "path": "docs/screenshots/03_invalidation.png",
+      "section": "invalidation",
+      "sha256": "d0da2f56aef904affe95ef3672dbd30bc3cbc520cfaa5b8856598e35ff54af6f"
+    },
+    {
+      "path": "docs/screenshots/04_cache.png",
+      "section": "cache",
+      "sha256": "e31126db134cd654ef88a07f61d8fafc3f2f85e03e4da8ec8248b6fe7c05ba15"
+    },
+    {
+      "path": "docs/screenshots/05_publication.png",
+      "section": "publication",
+      "sha256": "470b67570b4975e69a396d01122d779ef648e594b8d7efdce62e6cafb0c0fbca"
+    },
+    {
+      "path": "docs/screenshots/06_measurements.png",
+      "section": "measurements",
+      "sha256": "5b1f60f23e307c779ac139448e7e7ed9a04a8217a70ed3512f2363b894d17189"
+    }
+  ]
+}

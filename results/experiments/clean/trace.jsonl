@@ -1,0 +1,24 @@
+{"event_id": 0, "time_ns": 962500, "event": "BUILD_STARTED", "workers": 3, "actions": 7, "source_bytes": 19572}
+{"event_id": 1, "time_ns": 1175200, "event": "ACTION_STARTED", "action": "customers", "thread": "build-action_0"}
+{"event_id": 2, "time_ns": 1411700, "event": "ACTION_STARTED", "action": "orders", "thread": "build-action_1"}
+{"event_id": 3, "time_ns": 1476800, "event": "ACTION_EXECUTING", "action": "customers", "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28"}
+{"event_id": 4, "time_ns": 1597000, "event": "ACTION_STARTED", "action": "schema_source", "thread": "build-action_2"}
+{"event_id": 5, "time_ns": 1836100, "event": "ACTION_EXECUTING", "action": "schema_source", "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766"}
+{"event_id": 6, "time_ns": 1878100, "event": "ACTION_EXECUTING", "action": "orders", "key": "7cdf3d93ce4d519983fc8be5789b6dd1cd71f9fcad0d61c962bb1ee333146f7b"}
+{"event_id": 7, "time_ns": 8848700, "event": "ACTION_BUILT", "action": "customers", "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28", "duration_ns": 7671600, "output_bytes": 2862}
+{"event_id": 8, "time_ns": 9247600, "event": "ACTION_BUILT", "action": "schema_source", "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766", "duration_ns": 7648500, "output_bytes": 234}
+{"event_id": 9, "time_ns": 14845900, "event": "ACTION_BUILT", "action": "orders", "key": "7cdf3d93ce4d519983fc8be5789b6dd1cd71f9fcad0d61c962bb1ee333146f7b", "duration_ns": 13430900, "output_bytes": 70639}
+{"event_id": 10, "time_ns": 14957300, "event": "ACTION_STARTED", "action": "validated", "thread": "build-action_0"}
+{"event_id": 11, "time_ns": 15066500, "event": "ACTION_EXECUTING", "action": "validated", "key": "c025f24127e8487b6872fa0234096dc68faabea6f46c9be69c7bc3c724acdf50"}
+{"event_id": 12, "time_ns": 30525600, "event": "ACTION_BUILT", "action": "validated", "key": "c025f24127e8487b6872fa0234096dc68faabea6f46c9be69c7bc3c724acdf50", "duration_ns": 15563700, "output_bytes": 70639}
+{"event_id": 13, "time_ns": 30663100, "event": "ACTION_STARTED", "action": "revenue", "thread": "build-action_2"}
+{"event_id": 14, "time_ns": 30767200, "event": "ACTION_EXECUTING", "action": "revenue", "key": "e7ac87ba625ef27262075bbe3f9ac16926e1361432717a77b8149a4f670cb5fd"}
+{"event_id": 15, "time_ns": 43669700, "event": "ACTION_BUILT", "action": "revenue", "key": "e7ac87ba625ef27262075bbe3f9ac16926e1361432717a77b8149a4f670cb5fd", "duration_ns": 13004500, "output_bytes": 250}
+{"event_id": 16, "time_ns": 43790500, "event": "ACTION_STARTED", "action": "report", "thread": "build-action_1"}
+{"event_id": 17, "time_ns": 43890400, "event": "ACTION_EXECUTING", "action": "report", "key": "0296e0ef0dc54c425dd4377d1a391811d949d5a1205dfceb28b5c35070f46eca"}
+{"event_id": 18, "time_ns": 54297700, "event": "ACTION_BUILT", "action": "report", "key": "0296e0ef0dc54c425dd4377d1a391811d949d5a1205dfceb28b5c35070f46eca", "duration_ns": 10503900, "output_bytes": 253}
+{"event_id": 19, "time_ns": 54432100, "event": "ACTION_STARTED", "action": "bundle", "thread": "build-action_0"}
+{"event_id": 20, "time_ns": 54534900, "event": "ACTION_EXECUTING", "action": "bundle", "key": "6ceba96782ba8601d166894c3fb819cd805659f13681fd5afdb41b3671dbe975"}
+{"event_id": 21, "time_ns": 68790400, "event": "ACTION_BUILT", "action": "bundle", "key": "6ceba96782ba8601d166894c3fb819cd805659f13681fd5afdb41b3671dbe975", "duration_ns": 14355000, "output_bytes": 1231}
+{"event_id": 22, "time_ns": 90736400, "event": "RELEASE_PUBLISHED", "release": "1060608d70c1e43d-4d1816c9fe01", "artifact_digest": "0cc2c56f8b8e6e8b72cb2801be3697e09fe9ef6ddf604925065e6a65161aaaa5"}
+{"event_id": 23, "time_ns": 90769900, "event": "BUILD_FINISHED", "status": "SUCCESS"}

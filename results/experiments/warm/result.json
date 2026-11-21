@@ -1,0 +1,235 @@
+{
+  "status": "SUCCESS",
+  "failure": null,
+  "pointer": {
+    "format": 1,
+    "release": "1060608d70c1e43d-244d6a92c140",
+    "manifest_sha256": "1060608d70c1e43d5eb11161446aea5d7b90f19377dba926f593bcad9b2daeac",
+    "artifact_digest": "0cc2c56f8b8e6e8b72cb2801be3697e09fe9ef6ddf604925065e6a65161aaaa5"
+  },
+  "actions": {
+    "bundle": {
+      "key": "6ceba96782ba8601d166894c3fb819cd805659f13681fd5afdb41b3671dbe975",
+      "files": {
+        "bundle.json": {
+          "bytes": 1231,
+          "sha256": "e0bbc504521e084d28379af79513eb953e704cb254be674801400a2056802e7b"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1042900
+    },
+    "customers": {
+      "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+      "files": {
+        "customers.json": {
+          "bytes": 2862,
+          "sha256": "bbc62aa0ceeaddb76e8822e379d447ae702870ee8ac72b8571a0c2cbbe6c2e5d"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1997900
+    },
+    "orders": {
+      "key": "7cdf3d93ce4d519983fc8be5789b6dd1cd71f9fcad0d61c962bb1ee333146f7b",
+      "files": {
+        "orders.json": {
+          "bytes": 70639,
+          "sha256": "1f107cd96f658649ba11721678c6dabdd46d7038b971e0d4fad62df8a70830b9"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1936800
+    },
+    "report": {
+      "key": "0296e0ef0dc54c425dd4377d1a391811d949d5a1205dfceb28b5c35070f46eca",
+      "files": {
+        "report.md": {
+          "bytes": 253,
+          "sha256": "d5f3fd4ab8e660e34f3c4d90dfa65cc94977ffba49ad928722aab8564af461c0"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 976100
+    },
+    "revenue": {
+      "key": "e7ac87ba625ef27262075bbe3f9ac16926e1361432717a77b8149a4f670cb5fd",
+      "files": {
+        "revenue.json": {
+          "bytes": 250,
+          "sha256": "a2b13429d3b6ad2cc70222524b43b2f51a1e090f392e74aaf5be2e63fabe39ff"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1107500
+    },
+    "schema_source": {
+      "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766",
+      "files": {
+        "order_schema.py": {
+          "bytes": 234,
+          "sha256": "a81414f736ad8469dd218539a843e72c9fba57c3e3a13fa53ae7076bdd916bb3"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1778000
+    },
+    "validated": {
+      "key": "c025f24127e8487b6872fa0234096dc68faabea6f46c9be69c7bc3c724acdf50",
+      "files": {
+        "orders.valid.json": {
+          "bytes": 70639,
+          "sha256": "1f107cd96f658649ba11721678c6dabdd46d7038b971e0d4fad62df8a70830b9"
+        }
+      },
+      "status": "HIT",
+      "duration_ns": 1020000
+    }
+  },
+  "not_completed": [],
+  "tool": {
+    "engine_api": 1,
+    "python": "3.13.17",
+    "implementation": "CPython",
+    "sources": {
+      "engine.py": "6cba7510757eb64c7b48daf7d00e664702d2b0b094ac2f86093a0f74888ba15d",
+      "operations.py": "495c69cbad92fd9949c7d7d40341a6cf58200d15e7d334ad3a8319fcd59dfd47"
+    }
+  },
+  "duration_ns": 22633900,
+  "events": [
+    {
+      "event_id": 0,
+      "time_ns": 817800,
+      "event": "BUILD_STARTED",
+      "workers": 3,
+      "actions": 7,
+      "source_bytes": 19572
+    },
+    {
+      "event_id": 1,
+      "time_ns": 1020000,
+      "event": "ACTION_STARTED",
+      "action": "customers",
+      "thread": "build-action_0"
+    },
+    {
+      "event_id": 2,
+      "time_ns": 1203300,
+      "event": "ACTION_STARTED",
+      "action": "orders",
+      "thread": "build-action_1"
+    },
+    {
+      "event_id": 3,
+      "time_ns": 1392700,
+      "event": "ACTION_STARTED",
+      "action": "schema_source",
+      "thread": "build-action_2"
+    },
+    {
+      "event_id": 4,
+      "time_ns": 3020000,
+      "event": "CACHE_HIT",
+      "action": "customers",
+      "key": "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+      "duration_ns": 1997900,
+      "output_bytes": 2862
+    },
+    {
+      "event_id": 5,
+      "time_ns": 3141000,
+      "event": "CACHE_HIT",
+      "action": "orders",
+      "key": "7cdf3d93ce4d519983fc8be5789b6dd1cd71f9fcad0d61c962bb1ee333146f7b",
+      "duration_ns": 1936800,
+      "output_bytes": 70639
+    },
+    {
+      "event_id": 6,
+      "time_ns": 3171900,
+      "event": "CACHE_HIT",
+      "action": "schema_source",
+      "key": "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766",
+      "duration_ns": 1778000,
+      "output_bytes": 234
+    },
+    {
+      "event_id": 7,
+      "time_ns": 3219200,
+      "event": "ACTION_STARTED",
+      "action": "validated",
+      "thread": "build-action_0"
+    },
+    {
+      "event_id": 8,
+      "time_ns": 4240600,
+      "event": "CACHE_HIT",
+      "action": "validated",
+      "key": "c025f24127e8487b6872fa0234096dc68faabea6f46c9be69c7bc3c724acdf50",
+      "duration_ns": 1020000,
+      "output_bytes": 70639
+    },
+    {
+      "event_id": 9,
+      "time_ns": 4295000,
+      "event": "ACTION_STARTED",
+      "action": "revenue",
+      "thread": "build-action_1"
+    },
+    {
+      "event_id": 10,
+      "time_ns": 5403400,
+      "event": "CACHE_HIT",
+      "action": "revenue",
+      "key": "e7ac87ba625ef27262075bbe3f9ac16926e1361432717a77b8149a4f670cb5fd",
+      "duration_ns": 1107500,
+      "output_bytes": 250
+    },
+    {
+      "event_id": 11,
+      "time_ns": 5454900,
+      "event": "ACTION_STARTED",
+      "action": "report",
+      "thread": "build-action_2"
+    },
+    {
+      "event_id": 12,
+      "time_ns": 6432200,
+      "event": "CACHE_HIT",
+      "action": "report",
+      "key": "0296e0ef0dc54c425dd4377d1a391811d949d5a1205dfceb28b5c35070f46eca",
+      "duration_ns": 976100,
+      "output_bytes": 253
+    },
+    {
+      "event_id": 13,
+      "time_ns": 6472400,
+      "event": "ACTION_STARTED",
+      "action": "bundle",
+      "thread": "build-action_0"
+    },
+    {
+      "event_id": 14,
+      "time_ns": 7517100,
+      "event": "CACHE_HIT",
+      "action": "bundle",
+      "key": "6ceba96782ba8601d166894c3fb819cd805659f13681fd5afdb41b3671dbe975",
+      "duration_ns": 1042900,
+      "output_bytes": 1231
+    },
+    {
+      "event_id": 15,
+      "time_ns": 22605700,
+      "event": "RELEASE_PUBLISHED",
+      "release": "1060608d70c1e43d-244d6a92c140",
+      "artifact_digest": "0cc2c56f8b8e6e8b72cb2801be3697e09fe9ef6ddf604925065e6a65161aaaa5"
+    },
+    {
+      "event_id": 16,
+      "time_ns": 22633900,
+      "event": "BUILD_FINISHED",
+      "status": "SUCCESS"
+    }
+  ]
+}

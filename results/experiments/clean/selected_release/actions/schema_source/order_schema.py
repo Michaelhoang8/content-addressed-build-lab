@@ -1,0 +1,3 @@
+# Generated from the local fixture schema.
+import json
+ORDER_SCHEMA = json.loads('{"fields":{"amount_cents":{"minimum":0,"type":"integer"},"customer_id":{"min_length":1,"type":"string"},"order_id":{"minimum":1,"type":"integer"}}}\n')

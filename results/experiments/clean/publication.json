@@ -1,0 +1,16 @@
+{
+  "pointer_before_sha256": null,
+  "pointer_after_sha256": "d72022de12b371db37bf5a22fbb19bf577f958f9fc8478b7684e1c112b855032",
+  "release_count_before": 0,
+  "release_count_after": 1,
+  "remaining_staging_entries": 0,
+  "cache_keys_after": [
+    "0296e0ef0dc54c425dd4377d1a391811d949d5a1205dfceb28b5c35070f46eca",
+    "0f0c86d5361c6c70f57d4df139fed4430ab8aab7688a553788f45a5656467e28",
+    "5d5b0078c25322ee3ab2b7fff0b5499950bc05e713aaff386553b9f724991766",
+    "6ceba96782ba8601d166894c3fb819cd805659f13681fd5afdb41b3671dbe975",
+    "7cdf3d93ce4d519983fc8be5789b6dd1cd71f9fcad0d61c962bb1ee333146f7b",
+    "c025f24127e8487b6872fa0234096dc68faabea6f46c9be69c7bc3c724acdf50",
+    "e7ac87ba625ef27262075bbe3f9ac16926e1361432717a77b8149a4f670cb5fd"
+  ]
+}

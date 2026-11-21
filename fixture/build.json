@@ -1,0 +1,142 @@
+{
+  "actions": [
+    {
+      "argv": [
+        "--sort-by",
+        "order_id"
+      ],
+      "config": {
+        "columns": {
+          "amount_cents": "integer",
+          "customer_id": "string",
+          "order_id": "integer"
+        }
+      },
+      "deps": [],
+      "id": "orders",
+      "inputs": [
+        "orders.csv"
+      ],
+      "operation": "csv_to_json",
+      "outputs": [
+        "orders.json"
+      ]
+    },
+    {
+      "argv": [
+        "--sort-by",
+        "customer_id"
+      ],
+      "config": {
+        "columns": {
+          "customer_id": "string",
+          "name": "string",
+          "region": "string"
+        }
+      },
+      "deps": [],
+      "id": "customers",
+      "inputs": [
+        "customers.csv"
+      ],
+      "operation": "csv_to_json",
+      "outputs": [
+        "customers.json"
+      ]
+    },
+    {
+      "argv": [
+        "--name",
+        "ORDER_SCHEMA"
+      ],
+      "config": {},
+      "deps": [],
+      "id": "schema_source",
+      "inputs": [
+        "schema.json"
+      ],
+      "operation": "generate_constants",
+      "outputs": [
+        "order_schema.py"
+      ]
+    },
+    {
+      "argv": [],
+      "config": {
+        "rows_dep": "orders",
+        "schema_input": "schema.json"
+      },
+      "deps": [
+        "orders"
+      ],
+      "id": "validated",
+      "inputs": [
+        "schema.json"
+      ],
+      "operation": "validate_rows",
+      "outputs": [
+        "orders.valid.json"
+      ]
+    },
+    {
+      "argv": [
+        "--currency",
+        "USD"
+      ],
+      "config": {
+        "customers_dep": "customers",
+        "orders_dep": "validated"
+      },
+      "deps": [
+        "validated",
+        "customers"
+      ],
+      "id": "revenue",
+      "inputs": [],
+      "operation": "join_aggregate",
+      "outputs": [
+        "revenue.json"
+      ]
+    },
+    {
+      "argv": [
+        "--title",
+        "Revenue by region"
+      ],
+      "config": {
+        "revenue_dep": "revenue",
+        "template_input": "report_template.txt"
+      },
+      "deps": [
+        "revenue"
+      ],
+      "id": "report",
+      "inputs": [
+        "report_template.txt"
+      ],
+      "operation": "render_report",
+      "outputs": [
+        "report.md"
+      ]
+    },
+    {
+      "argv": [
+        "--label",
+        "synthetic-build-demo"
+      ],
+      "config": {},
+      "deps": [
+        "report",
+        "revenue",
+        "schema_source"
+      ],
+      "id": "bundle",
+      "inputs": [],
+      "operation": "bundle",
+      "outputs": [
+        "bundle.json"
+      ]
+    }
+  ],
+  "format": 1
+}
