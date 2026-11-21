@@ -1,5 +1,7 @@
 # Content-addressed build lab
 
+**[View the report in your browser](https://Michaelhoang8.github.io/content-addressed-build-lab/)**
+
 A small local build engine that executes a bounded DAG of real file-producing actions. It derives action keys from declared content and tool identity, verifies cached bytes before reuse, runs independent ready actions concurrently and exposes a new release only after the full graph succeeds.
 
 ![Recorded build outcomes](docs/charts/invalidation.png)
