@@ -41,6 +41,8 @@ python scripts/verify_results.py --output-dir build/my-run
 
 The full fixture has 1,200 orders; `--quick` uses 100. The driver runs tests first, creates a fresh local cache, captures each scenario and independently verifies the saved evidence. Omit `--output-dir` to replace committed results. `--reuse` only replots when execution-source hashes match. CI verifies committed evidence and runs an independent quick capture.
 
+The [original measurement driver](results/measurement-sources/run_study.py) and its [recorded hash and commit](results/measurement-sources/manifest.json) are preserved. The current driver adds narrow-screen hash wrapping. This presentation change reused the recorded measurements; `results/source-sha256.json` tracks the current reproducible tool state.
+
 | Scenario | Observed execution |
 |---|---|
 | Clean | All seven actions produce files. |

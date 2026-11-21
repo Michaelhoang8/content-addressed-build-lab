@@ -1,0 +1,7 @@
+{
+  "source_commit": "863cc71a0bd57c91ba076d6ca40b430b9182feef",
+  "source_path": "scripts/run_study.py",
+  "archived_path": "results/measurement-sources/run_study.py",
+  "sha256_lf": "bfb10d5b017cdf23bb92ddef393cb911a9a3119e7e6d63f9a86aa98b976deb5e",
+  "purpose": "Exact original driver used for the preserved experiments. The current driver differs only in report layout; the recorded execution sources and measurements are unchanged."
+}
