@@ -1,5 +1,5 @@
 {
-  "captured_at_utc": "2026-11-21T00:53:30.501935+00:00",
+  "captured_at_utc": "2026-11-21T00:57:30.994413+00:00",
   "source": "Actual browser rendering of docs/report.html",
   "recording": "Continuous automated browser review; not manual development footage",
   "viewport": {
@@ -7,8 +7,8 @@
     "height": 1000
   },
   "page_title": "Content-addressed build lab",
-  "report_sha256_normalized_text": "07d1945ada4671543c188c39f126fdb3853e370df6201bcb4b1339c7401e6afd",
-  "video_sha256": "1c55b588639eecfb2b378c3deea3b3e6527fcf80866f49dd34a567f2dab8c85d",
+  "report_sha256_normalized_text": "53638726ac01da03d433b4132cc062a02d81fd53f5a4bf9a5fd2f898cdb3c565",
+  "video_sha256": "39a5e401491edc977b2b9d8afdfeecc7b41a473b535ee0fa413de660f57de4bb",
   "captures": [
     {
       "path": "docs/screenshots/01_overview.png",
